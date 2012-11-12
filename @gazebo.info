@@ -1,0 +1,594 @@
+--------------------------------------------------------------------------------
+Node [/gazebo]
+Publications: 
+ * /tray_sensors/range_3_sim [sensor_msgs/LaserScan]
+ * /stereo/right/image_raw/compressed [sensor_msgs/CompressedImage]
+ * /tray_controller/follow_joint_trajectory/status [actionlib_msgs/GoalStatusArray]
+ * /cam3d/rgb/image_raw/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /tray_sensors/range_4_sim [sensor_msgs/LaserScan]
+ * /arm_controller/follow_joint_trajectory/feedback [control_msgs/FollowJointTrajectoryActionFeedback]
+ * /head_controller/follow_joint_trajectory/result [control_msgs/FollowJointTrajectoryActionResult]
+ * /sdh_finger_13_bumper/state [gazebo_msgs/ContactsState]
+ * /torso_controller/joint_trajectory_action/result [pr2_controllers_msgs/JointTrajectoryActionResult]
+ * /torso_controller/state [pr2_controllers_msgs/JointTrajectoryControllerState]
+ * /arm_controller/joint_trajectory_action/feedback [pr2_controllers_msgs/JointTrajectoryActionFeedback]
+ * /arm_controller/state [pr2_controllers_msgs/JointTrajectoryControllerState]
+ * /depth/image_raw [sensor_msgs/Image]
+ * /cam3d/rgb/image_raw/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /head_controller/joint_trajectory_action/result [pr2_controllers_msgs/JointTrajectoryActionResult]
+ * /base_pose_ground_truth [nav_msgs/Odometry]
+ * /stereo/left/image_raw/theora [theora_image_transport/Packet]
+ * /cam3d/ir/image_raw/compressed [sensor_msgs/CompressedImage]
+ * /stereo/right/camera_info [sensor_msgs/CameraInfo]
+ * /torso_controller/follow_joint_trajectory/status [actionlib_msgs/GoalStatusArray]
+ * /sdh_thumb_3_bumper/state [gazebo_msgs/ContactsState]
+ * /sdh_finger_22_bumper/state [gazebo_msgs/ContactsState]
+ * /cam3d/rgb/image_raw [sensor_msgs/Image]
+ * /sdh_controller/joint_trajectory_action/result [pr2_controllers_msgs/JointTrajectoryActionResult]
+ * /torso_controller/follow_joint_trajectory/result [control_msgs/FollowJointTrajectoryActionResult]
+ * /head_controller/joint_trajectory_action/status [actionlib_msgs/GoalStatusArray]
+ * /tray_controller/joint_trajectory_action/result [pr2_controllers_msgs/JointTrajectoryActionResult]
+ * /stereo/left/image_raw/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /cam3d/ir/image_raw [sensor_msgs/Image]
+ * /head_controller/state [pr2_controllers_msgs/JointTrajectoryControllerState]
+ * /tray_sensors/range_2_sim [sensor_msgs/LaserScan]
+ * /depth/camera_info [sensor_msgs/CameraInfo]
+ * /base_fl_caster_r_wheel_controller/state [pr2_controllers_msgs/JointControllerState]
+ * /gazebo/model_states [gazebo_msgs/ModelStates]
+ * /base_br_caster_r_wheel_controller/state [pr2_controllers_msgs/JointControllerState]
+ * /head_controller/joint_trajectory_action/feedback [pr2_controllers_msgs/JointTrajectoryActionFeedback]
+ * /sdh_controller/follow_joint_trajectory/feedback [control_msgs/FollowJointTrajectoryActionFeedback]
+ * /gazebo/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/right/image_raw/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/right/image_raw/theora [theora_image_transport/Packet]
+ * /arm_controller/joint_trajectory_action/status [actionlib_msgs/GoalStatusArray]
+ * /head_controller/follow_joint_trajectory/status [actionlib_msgs/GoalStatusArray]
+ * /arm_controller/follow_joint_trajectory/status [actionlib_msgs/GoalStatusArray]
+ * /base_fr_caster_r_wheel_controller/state [pr2_controllers_msgs/JointControllerState]
+ * /cam3d/rgb/image_raw/compressed [sensor_msgs/CompressedImage]
+ * /tray_controller/follow_joint_trajectory/feedback [control_msgs/FollowJointTrajectoryActionFeedback]
+ * /tray_controller/joint_trajectory_action/feedback [pr2_controllers_msgs/JointTrajectoryActionFeedback]
+ * /gazebo/paused [std_msgs/Bool]
+ * /cam3d/rgb/image_raw/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /sdh_controller/follow_joint_trajectory/status [actionlib_msgs/GoalStatusArray]
+ * /sdh_controller/joint_trajectory_action/status [actionlib_msgs/GoalStatusArray]
+ * /gazebo/parameter_updates [dynamic_reconfigure/Config]
+ * /power_state [pr2_msgs/PowerState]
+ * /torso_controller/joint_trajectory_action/feedback [pr2_controllers_msgs/JointTrajectoryActionFeedback]
+ * /tray_controller/joint_trajectory_action/status [actionlib_msgs/GoalStatusArray]
+ * /scan_front_raw [sensor_msgs/LaserScan]
+ * /tf [tf/tfMessage]
+ * /stereo/left/image_raw/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /cam3d/ir/image_raw/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /tray_controller/follow_joint_trajectory/result [control_msgs/FollowJointTrajectoryActionResult]
+ * /cam3d/ir/camera_info [sensor_msgs/CameraInfo]
+ * /stereo/left/image_raw [sensor_msgs/Image]
+ * /stereo/left/camera_info [sensor_msgs/CameraInfo]
+ * /stereo/left/image_raw/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /scan_top [sensor_msgs/LaserScan]
+ * /stereo/right/image_raw [sensor_msgs/Image]
+ * /cam3d/rgb/camera_info [sensor_msgs/CameraInfo]
+ * /base_br_caster_rotation_controller/state [pr2_controllers_msgs/JointControllerState]
+ * /base_bumper/state [gazebo_msgs/ContactsState]
+ * /stereo/right/image_raw/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /base_fl_caster_rotation_controller/state [pr2_controllers_msgs/JointControllerState]
+ * /joint_states [sensor_msgs/JointState]
+ * /rosout [rosgraph_msgs/Log]
+ * /stereo/left/image_raw/compressed [sensor_msgs/CompressedImage]
+ * /sdh_controller/joint_trajectory_action/feedback [pr2_controllers_msgs/JointTrajectoryActionFeedback]
+ * /cam3d/ir/image_raw/theora [theora_image_transport/Packet]
+ * /cam3d/depth/points [sensor_msgs/PointCloud2]
+ * /sdh_controller/state [pr2_controllers_msgs/JointTrajectoryControllerState]
+ * /base_bl_caster_r_wheel_controller/state [pr2_controllers_msgs/JointControllerState]
+ * /tray_sensors/range_1_sim [sensor_msgs/LaserScan]
+ * /base_bl_caster_rotation_controller/state [pr2_controllers_msgs/JointControllerState]
+ * /sdh_finger_23_bumper/state [gazebo_msgs/ContactsState]
+ * /stereo/left/image_raw/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /torso_controller/follow_joint_trajectory/feedback [control_msgs/FollowJointTrajectoryActionFeedback]
+ * /base_fr_caster_rotation_controller/state [pr2_controllers_msgs/JointControllerState]
+ * /mechanism_statistics [pr2_mechanism_msgs/MechanismStatistics]
+ * /arm_controller/joint_trajectory_action/result [pr2_controllers_msgs/JointTrajectoryActionResult]
+ * /cam3d/ir/image_raw/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /cam3d/ir/image_raw/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /tray_controller/state [pr2_controllers_msgs/JointTrajectoryControllerState]
+ * /sdh_controller/follow_joint_trajectory/result [control_msgs/FollowJointTrajectoryActionResult]
+ * /stereo/right/image_raw/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /sdh_thumb_2_bumper/state [gazebo_msgs/ContactsState]
+ * /stereo/right/image_raw/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /head_controller/follow_joint_trajectory/feedback [control_msgs/FollowJointTrajectoryActionFeedback]
+ * /torso_controller/joint_trajectory_action/status [actionlib_msgs/GoalStatusArray]
+ * /sdh_finger_12_bumper/state [gazebo_msgs/ContactsState]
+ * /points [sensor_msgs/PointCloud2]
+ * /cam3d/ir/image_raw/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /scan_rear_raw [sensor_msgs/LaserScan]
+ * /gazebo/link_states [gazebo_msgs/LinkStates]
+ * /cam3d/rgb/image_raw/theora [theora_image_transport/Packet]
+ * /clock [rosgraph_msgs/Clock]
+ * /arm_controller/follow_joint_trajectory/result [control_msgs/FollowJointTrajectoryActionResult]
+ * /cam3d/depth/image_raw [sensor_msgs/Image]
+ * /cam3d/rgb/image_raw/theora/parameter_updates [dynamic_reconfigure/Config]
+
+Subscriptions: 
+ * /arm_controller/follow_joint_trajectory/goal [unknown type]
+ * /plugged_in [unknown type]
+ * /head_controller/command [trajectory_msgs/JointTrajectory]
+ * /base_br_caster_r_wheel_controller/command [std_msgs/Float64]
+ * /tray_controller/joint_trajectory_action/goal [pr2_controllers_msgs/JointTrajectoryActionGoal]
+ * /base_bl_caster_r_wheel_controller/command [std_msgs/Float64]
+ * /tray_controller/joint_trajectory_action/cancel [actionlib_msgs/GoalID]
+ * /tray_controller/follow_joint_trajectory/cancel [unknown type]
+ * /arm_controller/joint_trajectory_action/cancel [actionlib_msgs/GoalID]
+ * /sdh_controller/follow_joint_trajectory/cancel [unknown type]
+ * /base_bl_caster_rotation_controller/command [std_msgs/Float64]
+ * /torso_controller/follow_joint_trajectory/cancel [unknown type]
+ * /base_fr_caster_r_wheel_controller/command [std_msgs/Float64]
+ * /tray_controller/follow_joint_trajectory/goal [unknown type]
+ * /base_br_caster_rotation_controller/command [std_msgs/Float64]
+ * /arm_controller/follow_joint_trajectory/cancel [unknown type]
+ * /set_update_rate [unknown type]
+ * /sdh_controller/follow_joint_trajectory/goal [unknown type]
+ * /sdh_controller/command [trajectory_msgs/JointTrajectory]
+ * /torso_controller/joint_trajectory_action/goal [pr2_controllers_msgs/JointTrajectoryActionGoal]
+ * /torso_controller/follow_joint_trajectory/goal [unknown type]
+ * /sdh_controller/joint_trajectory_action/goal [pr2_controllers_msgs/JointTrajectoryActionGoal]
+ * /gazebo/set_link_state [unknown type]
+ * /head_controller/follow_joint_trajectory/goal [unknown type]
+ * /base_fr_caster_rotation_controller/command [std_msgs/Float64]
+ * /set_hfov [unknown type]
+ * /gazebo/set_model_state [unknown type]
+ * /base_fl_caster_r_wheel_controller/command [std_msgs/Float64]
+ * /head_controller/joint_trajectory_action/goal [pr2_controllers_msgs/JointTrajectoryActionGoal]
+ * /arm_controller/command [trajectory_msgs/JointTrajectory]
+ * /torso_controller/joint_trajectory_action/cancel [actionlib_msgs/GoalID]
+ * /tray_controller/command [trajectory_msgs/JointTrajectory]
+ * /head_controller/follow_joint_trajectory/cancel [unknown type]
+ * /arm_controller/joint_trajectory_action/goal [pr2_controllers_msgs/JointTrajectoryActionGoal]
+ * /clock [rosgraph_msgs/Clock]
+ * /base_fl_caster_rotation_controller/command [std_msgs/Float64]
+ * /head_controller/joint_trajectory_action/cancel [actionlib_msgs/GoalID]
+ * /sdh_controller/joint_trajectory_action/cancel [actionlib_msgs/GoalID]
+ * /torso_controller/command [trajectory_msgs/JointTrajectory]
+
+Services: 
+ * /gazebo/apply_joint_effort
+ * /gazebo/get_physics_properties
+ * /gazebo/unpause_physics
+ * /stereo/right/image_raw/theora/set_parameters
+ * /gazebo/reset_world
+ * /tray_controller/query_state
+ * /head_cam3d_rgb_frame_controller_manager/unload_nodelet
+ * /gazebo/clear_body_wrenches
+ * /head_cam3d_depth_frame_controller_manager/list
+ * /arm_controller/query_state
+ * /gazebo/delete_model
+ * /gazebo/set_link_properties
+ * /gazebo/get_joint_properties
+ * /torso_controller/query_state
+ * /gazebo/set_model_configuration
+ * /head_cam3d_rgb_frame_controller_manager/load_nodelet
+ * /cam3d/rgb/image_raw/compressed/set_parameters
+ * /gazebo/pause_physics
+ * /head_cam3d_depth_frame_controller_manager/load_nodelet
+ * /gazebo/spawn_urdf_model
+ * /cam3d/ir/image_raw/theora/set_parameters
+ * /gazebo/get_link_state
+ * /pr2_controller_manager/list_controller_types
+ * /stereo/left/image_raw/theora/set_parameters
+ * /cam3d/ir/image_raw/compressed/set_parameters
+ * /cam3d/rgb/image_raw/theora/set_parameters
+ * /gazebo/set_joint_properties
+ * /pr2_controller_manager/load_controller
+ * /gazebo/get_world_properties
+ * /gazebo/set_parameters
+ * /gazebo/set_link_state
+ * /head_cam3d_depth_frame_controller_manager/unload_nodelet
+ * /pr2_controller_manager/reload_controller_libraries
+ * /pr2_controller_manager/unload_controller
+ * /gazebo/set_model_state
+ * /gazebo/get_link_properties
+ * /pr2_controller_manager/switch_controller
+ * /pr2_controller_manager/list_controllers
+ * /stereo/left/image_raw/compressed/set_parameters
+ * /gazebo/set_logger_level
+ * /head_cam3d_rgb_frame_controller_manager/list
+ * /gazebo/get_loggers
+ * /gazebo/spawn_gazebo_model
+ * /gazebo/clear_joint_forces
+ * /stereo/right/image_raw/compressed/set_parameters
+ * /gazebo/set_physics_properties
+ * /head_controller/query_state
+ * /gazebo/reset_simulation
+ * /sdh_controller/query_state
+ * /gazebo/apply_body_wrench
+ * /gazebo/get_model_state
+ * /gazebo/get_model_properties
+
+
+contacting node http://robocup-sim:47618/ ...
+Pid: 22969
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /footprint_observer
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /local_costmap_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /clock
+    * to: /arm_controller_spawner
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /tray_sensors/tray_sensors
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /tray_controller_spawner
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /light_controller/light_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /torso_controllers_spawner
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /sdh_controller_spawner
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /sdh_controller/simulated_tactile_sensors
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /create_colored_point_cloud
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /pr2_mechanism_diagnostics
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /robot_state_publisher
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /base_controller/base_drive_chain_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /base_controller/cob_base_velocity_smoother/cob_base_velocity_smoother
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /laser_front/scanner_front_filter
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /footprint_observer
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /point_cloud_converter_full_cloud
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /tray_controller/tray_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /head_controller/head_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /script_server/script_server
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /base_controller_spawner
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /stereo/left/prosilica_image_proc
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /relayboard/relayboard_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /laser_rear/scanner_rear_filter
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /stereo/right/prosilica_image_proc
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /arm_controller/arm_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /sound_controller/sound_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /head_controller_spawner
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /collision_velocity_filter
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /torso_controller/torso_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /sdh_controller/sdh_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: /local_costmap_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /scan_front_raw
+    * to: /laser_front/scanner_front_filter
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /scan_rear_raw
+    * to: /laser_rear/scanner_rear_filter
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /scan_top
+    * to: /local_costmap_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sdh_finger_22_bumper/state
+    * to: /sdh_controller/simulated_tactile_sensors
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sdh_finger_23_bumper/state
+    * to: /sdh_controller/simulated_tactile_sensors
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sdh_finger_12_bumper/state
+    * to: /sdh_controller/simulated_tactile_sensors
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sdh_finger_13_bumper/state
+    * to: /sdh_controller/simulated_tactile_sensors
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sdh_thumb_2_bumper/state
+    * to: /sdh_controller/simulated_tactile_sensors
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sdh_thumb_3_bumper/state
+    * to: /sdh_controller/simulated_tactile_sensors
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tray_sensors/range_1_sim
+    * to: /tray_sensors/tray_sensors
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tray_sensors/range_2_sim
+    * to: /tray_sensors/tray_sensors
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tray_sensors/range_3_sim
+    * to: /tray_sensors/tray_sensors
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tray_sensors/range_4_sim
+    * to: /tray_sensors/tray_sensors
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: /robot_state_publisher
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: /base_controller/base_drive_chain_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /mechanism_statistics
+    * to: /pr2_mechanism_diagnostics
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sdh_controller/state
+    * to: /sdh_controller/sdh_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/result
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/feedback
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/status
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /arm_controller/state
+    * to: /script_server/script_server
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /arm_controller/state
+    * to: /arm_controller/arm_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /arm_controller/joint_trajectory_action/result
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /arm_controller/joint_trajectory_action/feedback
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /arm_controller/joint_trajectory_action/status
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tray_controller/state
+    * to: /tray_controller/tray_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/result
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/feedback
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/status
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /torso_controller/state
+    * to: /torso_controller/torso_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /torso_controller/joint_trajectory_action/result
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /torso_controller/joint_trajectory_action/feedback
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /torso_controller/joint_trajectory_action/status
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /head_controller/state
+    * to: /head_controller/head_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /head_controller/joint_trajectory_action/result
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /head_controller/joint_trajectory_action/feedback
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /head_controller/joint_trajectory_action/status
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /sdh_controller/command
+    * to: http://robocup-sim:54540/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/goal
+    * to: http://robocup-sim:33014/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/cancel
+    * to: http://robocup-sim:33014/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /arm_controller/command
+    * to: http://robocup-sim:51459/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /arm_controller/joint_trajectory_action/goal
+    * to: http://robocup-sim:33014/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /arm_controller/joint_trajectory_action/cancel
+    * to: http://robocup-sim:33014/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tray_controller/command
+    * to: http://robocup-sim:51871/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/goal
+    * to: http://robocup-sim:33014/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/cancel
+    * to: http://robocup-sim:33014/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /base_fr_caster_rotation_controller/command
+    * to: http://robocup-sim:50181/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /torso_controller/command
+    * to: http://robocup-sim:55189/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /torso_controller/joint_trajectory_action/goal
+    * to: http://robocup-sim:33014/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /torso_controller/joint_trajectory_action/cancel
+    * to: http://robocup-sim:33014/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /base_fl_caster_rotation_controller/command
+    * to: http://robocup-sim:50181/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /head_controller/command
+    * to: http://robocup-sim:55680/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /head_controller/joint_trajectory_action/goal
+    * to: http://robocup-sim:33014/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /head_controller/joint_trajectory_action/cancel
+    * to: http://robocup-sim:33014/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /base_br_caster_rotation_controller/command
+    * to: http://robocup-sim:50181/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /base_bl_caster_rotation_controller/command
+    * to: http://robocup-sim:50181/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /base_fr_caster_r_wheel_controller/command
+    * to: http://robocup-sim:50181/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /base_fl_caster_r_wheel_controller/command
+    * to: http://robocup-sim:50181/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /base_br_caster_r_wheel_controller/command
+    * to: http://robocup-sim:50181/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /base_bl_caster_r_wheel_controller/command
+    * to: http://robocup-sim:50181/
+    * direction: inbound
+    * transport: TCPROS
+

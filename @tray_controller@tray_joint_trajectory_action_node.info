@@ -1,0 +1,60 @@
+--------------------------------------------------------------------------------
+Node [/tray_controller/tray_joint_trajectory_action_node]
+Publications: 
+ * /tray_controller/joint_trajectory_action/result [pr2_controllers_msgs/JointTrajectoryActionResult]
+ * /tray_controller/joint_trajectory_action/feedback [pr2_controllers_msgs/JointTrajectoryActionFeedback]
+ * /tray_controller/joint_trajectory_action/status [actionlib_msgs/GoalStatusArray]
+ * /rosout [rosgraph_msgs/Log]
+ * /tray_controller/command [trajectory_msgs/JointTrajectory]
+
+Subscriptions: 
+ * /tray_controller/joint_trajectory_action/goal [pr2_controllers_msgs/JointTrajectoryActionGoal]
+ * /tray_controller/joint_trajectory_action/cancel [actionlib_msgs/GoalID]
+ * /tray_controller/state [pr2_controllers_msgs/JointTrajectoryControllerState]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /tray_controller/tray_joint_trajectory_action_node/set_logger_level
+ * /tray_controller/tray_joint_trajectory_action_node/get_loggers
+
+
+contacting node http://robocup-sim:51871/ ...
+Pid: 23050
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tray_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/result
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/feedback
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/status
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tray_controller/state
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/goal
+    * to: http://robocup-sim:33014/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/cancel
+    * to: http://robocup-sim:33014/
+    * direction: inbound
+    * transport: TCPROS
+

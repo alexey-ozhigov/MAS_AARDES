@@ -1,0 +1,24 @@
+--------------------------------------------------------------------------------
+Node [/relayboard/relayboard_node]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+ * /emergency_stop_state [cob_relayboard/EmergencyStopState]
+
+Subscriptions: 
+ * /clock [rosgraph_msgs/Clock]
+
+Services: None
+
+
+contacting node http://robocup-sim:55235/ ...
+Pid: 23040
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+

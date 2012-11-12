@@ -1,0 +1,70 @@
+--------------------------------------------------------------------------------
+Node [/stereo/right/prosilica_image_proc]
+Publications: 
+ * /stereo/right/image_rect/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/right/image_rect_color/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/right/image_rect_color/compressed [sensor_msgs/CompressedImage]
+ * /stereo/right/image_rect [sensor_msgs/Image]
+ * /stereo/right/prosilica_image_proc_rectify_color/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/right/image_mono/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/right/image_rect/compressed [sensor_msgs/CompressedImage]
+ * /stereo/right/image_rect/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/right/image_mono/theora [theora_image_transport/Packet]
+ * /stereo/right/image_color/compressed [sensor_msgs/CompressedImage]
+ * /stereo/right/image_color/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/right/image_mono/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/right/prosilica_image_proc_debayer/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/right/image_color [sensor_msgs/Image]
+ * /stereo/right/image_rect_color/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/right/prosilica_image_proc_rectify_mono/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/right/prosilica_image_proc_rectify_color/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/right/image_color/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/right/image_rect_color/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/right/image_mono/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/right/image_color/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /rosout [rosgraph_msgs/Log]
+ * /stereo/right/image_rect/theora [theora_image_transport/Packet]
+ * /stereo/right/image_rect/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/right/image_rect/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/right/image_mono/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/right/image_mono/compressed [sensor_msgs/CompressedImage]
+ * /stereo/right/image_color/theora [theora_image_transport/Packet]
+ * /stereo/right/image_rect_color [sensor_msgs/Image]
+ * /stereo/right/image_rect_color/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/right/prosilica_image_proc_debayer/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/right/image_color/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/right/image_rect_color/theora [theora_image_transport/Packet]
+ * /stereo/right/image_mono [sensor_msgs/Image]
+ * /stereo/right/prosilica_image_proc_rectify_mono/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+
+Subscriptions: 
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /stereo/right/image_rect/compressed/set_parameters
+ * /stereo/right/prosilica_image_proc_rectify_mono/set_parameters
+ * /stereo/right/prosilica_image_proc/get_loggers
+ * /stereo/right/prosilica_image_proc/set_logger_level
+ * /stereo/right/image_rect_color/theora/set_parameters
+ * /stereo/right/image_color/theora/set_parameters
+ * /stereo/right/prosilica_image_proc_debayer/set_parameters
+ * /stereo/right/image_mono/compressed/set_parameters
+ * /stereo/right/prosilica_image_proc_rectify_color/set_parameters
+ * /stereo/right/image_rect/theora/set_parameters
+ * /stereo/right/image_mono/theora/set_parameters
+ * /stereo/right/image_rect_color/compressed/set_parameters
+ * /stereo/right/image_color/compressed/set_parameters
+
+
+contacting node http://robocup-sim:41906/ ...
+Pid: 23073
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+

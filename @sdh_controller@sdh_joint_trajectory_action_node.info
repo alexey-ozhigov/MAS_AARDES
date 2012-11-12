@@ -1,0 +1,60 @@
+--------------------------------------------------------------------------------
+Node [/sdh_controller/sdh_joint_trajectory_action_node]
+Publications: 
+ * /sdh_controller/command [trajectory_msgs/JointTrajectory]
+ * /sdh_controller/joint_trajectory_action/result [pr2_controllers_msgs/JointTrajectoryActionResult]
+ * /sdh_controller/joint_trajectory_action/status [actionlib_msgs/GoalStatusArray]
+ * /rosout [rosgraph_msgs/Log]
+ * /sdh_controller/joint_trajectory_action/feedback [pr2_controllers_msgs/JointTrajectoryActionFeedback]
+
+Subscriptions: 
+ * /sdh_controller/joint_trajectory_action/goal [pr2_controllers_msgs/JointTrajectoryActionGoal]
+ * /sdh_controller/state [pr2_controllers_msgs/JointTrajectoryControllerState]
+ * /clock [rosgraph_msgs/Clock]
+ * /sdh_controller/joint_trajectory_action/cancel [actionlib_msgs/GoalID]
+
+Services: 
+ * /sdh_controller/sdh_joint_trajectory_action_node/set_logger_level
+ * /sdh_controller/sdh_joint_trajectory_action_node/get_loggers
+
+
+contacting node http://robocup-sim:54540/ ...
+Pid: 23105
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sdh_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/result
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/feedback
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/status
+    * to: /gazebo_services
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /sdh_controller/state
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/goal
+    * to: http://robocup-sim:33014/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/cancel
+    * to: http://robocup-sim:33014/
+    * direction: inbound
+    * transport: TCPROS
+

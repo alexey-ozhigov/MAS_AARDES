@@ -1,0 +1,40 @@
+--------------------------------------------------------------------------------
+Node [/collision_velocity_filter]
+Publications: 
+ * /collision_velocity_filter/parameter_updates [dynamic_reconfigure/Config]
+ * /collision_velocity_filter/relevant_obstacles [nav_msgs/GridCells]
+ * /base_controller/command [geometry_msgs/Twist]
+ * /rosout [rosgraph_msgs/Log]
+ * /collision_velocity_filter/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+
+Subscriptions: 
+ * /local_costmap_node/costmap/obstacles [nav_msgs/GridCells]
+ * /base_controller/command_safe [unknown type]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /collision_velocity_filter/get_loggers
+ * /collision_velocity_filter/set_parameters
+ * /collision_velocity_filter/set_logger_level
+
+
+contacting node http://robocup-sim:59268/ ...
+Pid: 23137
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /base_controller/command
+    * to: /base_controller/cob_base_velocity_smoother/cob_base_velocity_smoother
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /local_costmap_node/costmap/obstacles
+    * to: http://robocup-sim:43898/
+    * direction: inbound
+    * transport: TCPROS
+

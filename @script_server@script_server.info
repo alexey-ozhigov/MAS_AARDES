@@ -1,0 +1,38 @@
+--------------------------------------------------------------------------------
+Node [/script_server/script_server]
+Publications: 
+ * /script_server/result [cob_script_server/ScriptActionResult]
+ * /rosout [rosgraph_msgs/Log]
+ * /script_server/status [actionlib_msgs/GoalStatusArray]
+ * /light_controller/command [std_msgs/ColorRGBA]
+ * /script_server/feedback [cob_script_server/ScriptActionFeedback]
+
+Subscriptions: 
+ * /arm_controller/state [pr2_controllers_msgs/JointTrajectoryControllerState]
+ * /script_server/goal [unknown type]
+ * /clock [rosgraph_msgs/Clock]
+ * /script_server/cancel [unknown type]
+
+Services: None
+
+
+contacting node http://robocup-sim:60772/ ...
+Pid: 23158
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /light_controller/command
+    * to: /light_controller/light_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /arm_controller/state
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+

@@ -1,0 +1,54 @@
+--------------------------------------------------------------------------------
+Node [/sdh_controller/simulated_tactile_sensors]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+ * /sdh_controller/tactile_data [schunk_sdh/TactileSensor]
+
+Subscriptions: 
+ * /sdh_finger_13_bumper/state [gazebo_msgs/ContactsState]
+ * /sdh_thumb_3_bumper/state [gazebo_msgs/ContactsState]
+ * /sdh_finger_22_bumper/state [gazebo_msgs/ContactsState]
+ * /sdh_finger_23_bumper/state [gazebo_msgs/ContactsState]
+ * /clock [rosgraph_msgs/Clock]
+ * /sdh_thumb_2_bumper/state [gazebo_msgs/ContactsState]
+ * /sdh_finger_12_bumper/state [gazebo_msgs/ContactsState]
+
+Services: None
+
+
+contacting node http://robocup-sim:46854/ ...
+Pid: 23109
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sdh_finger_23_bumper/state
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /sdh_thumb_3_bumper/state
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /sdh_finger_22_bumper/state
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /sdh_thumb_2_bumper/state
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /sdh_finger_13_bumper/state
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /sdh_finger_12_bumper/state
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+

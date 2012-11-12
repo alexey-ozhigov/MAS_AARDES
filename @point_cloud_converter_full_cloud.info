@@ -1,0 +1,28 @@
+--------------------------------------------------------------------------------
+Node [/point_cloud_converter_full_cloud]
+Publications: 
+ * /cam3d/depth/points1 [sensor_msgs/PointCloud]
+ * /points2_out [sensor_msgs/PointCloud2]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /points_in [unknown type]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /point_cloud_converter_full_cloud/get_loggers
+ * /point_cloud_converter_full_cloud/set_logger_level
+
+
+contacting node http://robocup-sim:47656/ ...
+Pid: 22973
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+

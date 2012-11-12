@@ -1,0 +1,35 @@
+--------------------------------------------------------------------------------
+Node [/laser_rear/scanner_rear_filter]
+Publications: 
+ * /scan_rear [sensor_msgs/LaserScan]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /scan_rear_raw [sensor_msgs/LaserScan]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /laser_rear/scanner_rear_filter/set_logger_level
+ * /laser_rear/scanner_rear_filter/get_loggers
+
+
+contacting node http://robocup-sim:32827/ ...
+Pid: 23025
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /scan_rear
+    * to: /local_costmap_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /scan_rear_raw
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+

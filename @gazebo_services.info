@@ -1,0 +1,311 @@
+--------------------------------------------------------------------------------
+Node [/gazebo_services]
+Publications: 
+ * /arm_left_controller/joint_trajectory_action/goal [pr2_controllers_msgs/JointTrajectoryActionGoal]
+ * /arm_right_controller/joint_trajectory_action/cancel [actionlib_msgs/GoalID]
+ * /tray_controller/joint_trajectory_action/goal [pr2_controllers_msgs/JointTrajectoryActionGoal]
+ * /tray_controller/joint_trajectory_action/cancel [actionlib_msgs/GoalID]
+ * /sdh_left_controller/joint_trajectory_action/cancel [actionlib_msgs/GoalID]
+ * /arm_controller/joint_trajectory_action/cancel [actionlib_msgs/GoalID]
+ * /arm_right_controller/joint_trajectory_action/goal [pr2_controllers_msgs/JointTrajectoryActionGoal]
+ * /sdh_right_controller/joint_trajectory_action/cancel [actionlib_msgs/GoalID]
+ * /move_base/goal [move_base_msgs/MoveBaseActionGoal]
+ * /sdh_left_controller/joint_trajectory_action/goal [pr2_controllers_msgs/JointTrajectoryActionGoal]
+ * /torso_controller/joint_trajectory_action/goal [pr2_controllers_msgs/JointTrajectoryActionGoal]
+ * /sdh_controller/joint_trajectory_action/goal [pr2_controllers_msgs/JointTrajectoryActionGoal]
+ * /rosout [rosgraph_msgs/Log]
+ * /head_controller/joint_trajectory_action/goal [pr2_controllers_msgs/JointTrajectoryActionGoal]
+ * /move_base/cancel [actionlib_msgs/GoalID]
+ * /torso_controller/joint_trajectory_action/cancel [actionlib_msgs/GoalID]
+ * /arm_controller/joint_trajectory_action/goal [pr2_controllers_msgs/JointTrajectoryActionGoal]
+ * /head_controller/joint_trajectory_action/cancel [actionlib_msgs/GoalID]
+ * /sdh_controller/joint_trajectory_action/cancel [actionlib_msgs/GoalID]
+ * /arm_left_controller/joint_trajectory_action/cancel [actionlib_msgs/GoalID]
+ * /sdh_right_controller/joint_trajectory_action/goal [pr2_controllers_msgs/JointTrajectoryActionGoal]
+
+Subscriptions: 
+ * /sdh_left_controller/joint_trajectory_action/feedback [unknown type]
+ * /torso_controller/joint_trajectory_action/result [pr2_controllers_msgs/JointTrajectoryActionResult]
+ * /arm_left_controller/joint_trajectory_action/result [unknown type]
+ * /sdh_right_controller/joint_trajectory_action/feedback [unknown type]
+ * /move_base/status [unknown type]
+ * /move_base/feedback [unknown type]
+ * /arm_controller/joint_trajectory_action/feedback [pr2_controllers_msgs/JointTrajectoryActionFeedback]
+ * /head_controller/joint_trajectory_action/result [pr2_controllers_msgs/JointTrajectoryActionResult]
+ * /arm_right_controller/joint_trajectory_action/status [unknown type]
+ * /sdh_right_controller/joint_trajectory_action/status [unknown type]
+ * /head_controller/joint_trajectory_action/status [actionlib_msgs/GoalStatusArray]
+ * /tray_controller/joint_trajectory_action/result [pr2_controllers_msgs/JointTrajectoryActionResult]
+ * /arm_right_controller/joint_trajectory_action/feedback [unknown type]
+ * /sdh_controller/joint_trajectory_action/result [pr2_controllers_msgs/JointTrajectoryActionResult]
+ * /head_controller/joint_trajectory_action/feedback [pr2_controllers_msgs/JointTrajectoryActionFeedback]
+ * /arm_controller/joint_trajectory_action/status [actionlib_msgs/GoalStatusArray]
+ * /arm_right_controller/joint_trajectory_action/result [unknown type]
+ * /tray_controller/joint_trajectory_action/feedback [pr2_controllers_msgs/JointTrajectoryActionFeedback]
+ * /torso_controller/joint_trajectory_action/feedback [pr2_controllers_msgs/JointTrajectoryActionFeedback]
+ * /sdh_right_controller/joint_trajectory_action/result [unknown type]
+ * /sdh_left_controller/joint_trajectory_action/result [unknown type]
+ * /sdh_controller/joint_trajectory_action/feedback [pr2_controllers_msgs/JointTrajectoryActionFeedback]
+ * /arm_left_controller/joint_trajectory_action/status [unknown type]
+ * /sdh_controller/joint_trajectory_action/status [actionlib_msgs/GoalStatusArray]
+ * /arm_controller/joint_trajectory_action/result [pr2_controllers_msgs/JointTrajectoryActionResult]
+ * /clock [rosgraph_msgs/Clock]
+ * /torso_controller/joint_trajectory_action/status [actionlib_msgs/GoalStatusArray]
+ * /arm_left_controller/joint_trajectory_action/feedback [unknown type]
+ * /tray_controller/joint_trajectory_action/status [actionlib_msgs/GoalStatusArray]
+ * /sdh_left_controller/joint_trajectory_action/status [unknown type]
+ * /move_base/result [unknown type]
+
+Services: 
+ * /sdh_controller/recover
+ * /arm_left_controller/set_operation_mode
+ * /arm_controller/set_operation_mode
+ * /arm_left_controller/stop
+ * /arm_right_controller/init
+ * /sdh_controller/stop
+ * /arm_controller/stop
+ * /sdh_right_controller/stop
+ * /sdh_right_controller/set_operation_mode
+ * /sdh_controller/set_operation_mode
+ * /arm_right_controller/stop
+ * /arm_controller/init
+ * /head_controller/init
+ * /sdh_right_controller/init
+ * /sdh_left_controller/set_operation_mode
+ * /base_controller/stop
+ * /sdh_left_controller/init
+ * /head_controller/stop
+ * /arm_left_controller/init
+ * /torso_controller/init
+ * /arm_controller/recover
+ * /arm_right_controller/set_operation_mode
+ * /tray_controller/recover
+ * /tray_controller/stop
+ * /head_controller/recover
+ * /arm_left_controller/recover
+ * /torso_controller/recover
+ * /torso_controller/stop
+ * /sdh_left_controller/recover
+ * /arm_right_controller/recover
+ * /sdh_left_controller/stop
+ * /sdh_right_controller/recover
+ * /tray_controller/init
+ * /arm_controller/set_joint_stiffness
+ * /sdh_controller/init
+ * /head_controller/set_operation_mode
+ * /tray_controller/set_operation_mode
+ * /torso_controller/set_operation_mode
+
+
+contacting node http://robocup-sim:33014/ ...
+Pid: 23152
+Connections:
+ * topic: /arm_controller/joint_trajectory_action/goal
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /arm_controller/joint_trajectory_action/goal
+    * to: /arm_controller/arm_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /arm_controller/joint_trajectory_action/cancel
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /arm_controller/joint_trajectory_action/cancel
+    * to: /arm_controller/arm_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /torso_controller/joint_trajectory_action/goal
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /torso_controller/joint_trajectory_action/goal
+    * to: /torso_controller/torso_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/cancel
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/cancel
+    * to: /tray_controller/tray_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/goal
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/goal
+    * to: /tray_controller/tray_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /head_controller/joint_trajectory_action/cancel
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /head_controller/joint_trajectory_action/cancel
+    * to: /head_controller/head_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /torso_controller/joint_trajectory_action/cancel
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /torso_controller/joint_trajectory_action/cancel
+    * to: /torso_controller/torso_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /head_controller/joint_trajectory_action/goal
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /head_controller/joint_trajectory_action/goal
+    * to: /head_controller/head_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/cancel
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/cancel
+    * to: /sdh_controller/sdh_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/goal
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/goal
+    * to: /sdh_controller/sdh_joint_trajectory_action_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /torso_controller/joint_trajectory_action/feedback
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /torso_controller/joint_trajectory_action/feedback
+    * to: http://robocup-sim:55189/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/status
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/status
+    * to: http://robocup-sim:54540/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /head_controller/joint_trajectory_action/status
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /head_controller/joint_trajectory_action/status
+    * to: http://robocup-sim:55680/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/result
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/result
+    * to: http://robocup-sim:51871/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /arm_controller/joint_trajectory_action/result
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /arm_controller/joint_trajectory_action/result
+    * to: http://robocup-sim:51459/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/result
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/result
+    * to: http://robocup-sim:54540/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /head_controller/joint_trajectory_action/feedback
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /head_controller/joint_trajectory_action/feedback
+    * to: http://robocup-sim:55680/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /torso_controller/joint_trajectory_action/result
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /torso_controller/joint_trajectory_action/result
+    * to: http://robocup-sim:55189/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /arm_controller/joint_trajectory_action/feedback
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /arm_controller/joint_trajectory_action/feedback
+    * to: http://robocup-sim:51459/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /arm_controller/joint_trajectory_action/status
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /arm_controller/joint_trajectory_action/status
+    * to: http://robocup-sim:51459/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/status
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/status
+    * to: http://robocup-sim:51871/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /head_controller/joint_trajectory_action/result
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /head_controller/joint_trajectory_action/result
+    * to: http://robocup-sim:55680/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/feedback
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /sdh_controller/joint_trajectory_action/feedback
+    * to: http://robocup-sim:54540/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/feedback
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tray_controller/joint_trajectory_action/feedback
+    * to: http://robocup-sim:51871/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /torso_controller/joint_trajectory_action/status
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /torso_controller/joint_trajectory_action/status
+    * to: http://robocup-sim:55189/
+    * direction: inbound
+    * transport: TCPROS
+

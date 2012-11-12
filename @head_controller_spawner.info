@@ -1,0 +1,23 @@
+--------------------------------------------------------------------------------
+Node [/head_controller_spawner]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /clock [rosgraph_msgs/Clock]
+
+Services: None
+
+
+contacting node http://robocup-sim:42814/ ...
+Pid: 23064
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+

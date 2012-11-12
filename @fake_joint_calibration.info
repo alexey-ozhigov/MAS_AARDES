@@ -1,0 +1,13 @@
+--------------------------------------------------------------------------------
+Node [/fake_joint_calibration]
+Publications: 
+ * /calibrated [std_msgs/Bool]
+
+Subscriptions: None
+
+Services: None
+
+
+contacting node http://robocup-sim:38631/ ...
+Pid: 22987
+

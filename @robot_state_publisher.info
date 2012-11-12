@@ -1,0 +1,43 @@
+--------------------------------------------------------------------------------
+Node [/robot_state_publisher]
+Publications: 
+ * /tf [tf/tfMessage]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /joint_states [sensor_msgs/JointState]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /robot_state_publisher/get_loggers
+ * /robot_state_publisher/set_logger_level
+
+
+contacting node http://robocup-sim:60489/ ...
+Pid: 22974
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /footprint_observer
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /local_costmap_node
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: http://robocup-sim:50181/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+

@@ -1,0 +1,36 @@
+Header header
+  uint32 seq
+  time stamp
+  string frame_id
+gazebo_msgs/ContactState[] states
+  string info
+  string geom1_name
+  string geom2_name
+  geometry_msgs/Wrench[] wrenches
+    geometry_msgs/Vector3 force
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Vector3 torque
+      float64 x
+      float64 y
+      float64 z
+  geometry_msgs/Wrench total_wrench
+    geometry_msgs/Vector3 force
+      float64 x
+      float64 y
+      float64 z
+    geometry_msgs/Vector3 torque
+      float64 x
+      float64 y
+      float64 z
+  geometry_msgs/Vector3[] contact_positions
+    float64 x
+    float64 y
+    float64 z
+  geometry_msgs/Vector3[] contact_normals
+    float64 x
+    float64 y
+    float64 z
+  float64[] depths
+

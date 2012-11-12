@@ -1,0 +1,52 @@
+Header header
+  uint32 seq
+  time stamp
+  string frame_id
+pr2_mechanism_msgs/ActuatorStatistics[] actuator_statistics
+  string name
+  int32 device_id
+  time timestamp
+  int32 encoder_count
+  float64 encoder_offset
+  float64 position
+  float64 encoder_velocity
+  float64 velocity
+  bool calibration_reading
+  bool calibration_rising_edge_valid
+  bool calibration_falling_edge_valid
+  float64 last_calibration_rising_edge
+  float64 last_calibration_falling_edge
+  bool is_enabled
+  bool halted
+  float64 last_commanded_current
+  float64 last_commanded_effort
+  float64 last_executed_current
+  float64 last_executed_effort
+  float64 last_measured_current
+  float64 last_measured_effort
+  float64 motor_voltage
+  int32 num_encoder_errors
+pr2_mechanism_msgs/JointStatistics[] joint_statistics
+  string name
+  time timestamp
+  float64 position
+  float64 velocity
+  float64 measured_effort
+  float64 commanded_effort
+  bool is_calibrated
+  bool violated_limits
+  float64 odometer
+  float64 min_position
+  float64 max_position
+  float64 max_abs_velocity
+  float64 max_abs_effort
+pr2_mechanism_msgs/ControllerStatistics[] controller_statistics
+  string name
+  time timestamp
+  bool running
+  duration max_time
+  duration mean_time
+  duration variance_time
+  int32 num_control_loop_overruns
+  time time_last_control_loop_overrun
+

@@ -1,0 +1,70 @@
+--------------------------------------------------------------------------------
+Node [/stereo/left/prosilica_image_proc]
+Publications: 
+ * /stereo/left/prosilica_image_proc_rectify_color/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/left/image_rect_color/compressed [sensor_msgs/CompressedImage]
+ * /stereo/left/image_mono/compressed [sensor_msgs/CompressedImage]
+ * /stereo/left/image_rect/theora [theora_image_transport/Packet]
+ * /stereo/left/image_mono/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/left/image_rect/compressed [sensor_msgs/CompressedImage]
+ * /stereo/left/prosilica_image_proc_debayer/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/left/image_color/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/left/image_rect/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/left/image_color/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/left/prosilica_image_proc_rectify_mono/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/left/prosilica_image_proc_rectify_color/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/left/image_rect_color/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/left/image_mono/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/left/image_rect_color/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/left/image_rect_color [sensor_msgs/Image]
+ * /stereo/left/image_rect/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/left/image_color/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /rosout [rosgraph_msgs/Log]
+ * /stereo/left/image_rect_color/theora/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/left/image_color/compressed [sensor_msgs/CompressedImage]
+ * /stereo/left/image_mono/theora [theora_image_transport/Packet]
+ * /stereo/left/image_rect_color/theora [theora_image_transport/Packet]
+ * /stereo/left/image_mono/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/left/image_color/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/left/image_color/theora [theora_image_transport/Packet]
+ * /stereo/left/image_color [sensor_msgs/Image]
+ * /stereo/left/image_rect_color/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/left/prosilica_image_proc_rectify_mono/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/left/prosilica_image_proc_debayer/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/left/image_mono/compressed/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/left/image_rect/theora/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /stereo/left/image_rect [sensor_msgs/Image]
+ * /stereo/left/image_rect/compressed/parameter_updates [dynamic_reconfigure/Config]
+ * /stereo/left/image_mono [sensor_msgs/Image]
+
+Subscriptions: 
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /stereo/left/image_color/compressed/set_parameters
+ * /stereo/left/prosilica_image_proc/get_loggers
+ * /stereo/left/image_color/theora/set_parameters
+ * /stereo/left/prosilica_image_proc_rectify_mono/set_parameters
+ * /stereo/left/prosilica_image_proc/set_logger_level
+ * /stereo/left/image_rect_color/theora/set_parameters
+ * /stereo/left/image_rect_color/compressed/set_parameters
+ * /stereo/left/prosilica_image_proc_rectify_color/set_parameters
+ * /stereo/left/image_rect/theora/set_parameters
+ * /stereo/left/image_mono/compressed/set_parameters
+ * /stereo/left/prosilica_image_proc_debayer/set_parameters
+ * /stereo/left/image_rect/compressed/set_parameters
+ * /stereo/left/image_mono/theora/set_parameters
+
+
+contacting node http://robocup-sim:51075/ ...
+Pid: 23069
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+

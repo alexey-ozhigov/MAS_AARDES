@@ -1,0 +1,29 @@
+--------------------------------------------------------------------------------
+Node [/light_controller/light_node]
+Publications: 
+ * /light_controller/marker [visualization_msgs/Marker]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /light_controller/command [std_msgs/ColorRGBA]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: None
+
+
+contacting node http://robocup-sim:39873/ ...
+Pid: 23116
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /light_controller/command
+    * to: http://robocup-sim:60772/
+    * direction: inbound
+    * transport: TCPROS
+

@@ -1,0 +1,23 @@
+--------------------------------------------------------------------------------
+Node [/base_controller/undercarriage_ctrl_node]
+Publications: 
+ * /tf [tf/tfMessage]
+ * /diagnostics [diagnostic_msgs/DiagnosticArray]
+ * /rosout [rosgraph_msgs/Log]
+ * /base_controller/odometry [nav_msgs/Odometry]
+ * /base_controller/joint_command [pr2_controllers_msgs/JointTrajectoryControllerState]
+
+Subscriptions: 
+ * /base_controller/diagnostic [diagnostic_msgs/DiagnosticStatus]
+ * /base_controller/command_direct [geometry_msgs/Twist]
+ * /base_controller/state [pr2_controllers_msgs/JointTrajectoryControllerState]
+ * /clock [rosgraph_msgs/Clock]
+ * /emergency_stop_state [cob_relayboard/EmergencyStopState]
+
+Services: 
+ * /base_controller/is_moving
+ * /base_controller/undercarriage_ctrl_node/get_loggers
+ * /base_controller/undercarriage_ctrl_node/set_logger_level
+
+
+contacting node http://robocup-sim:42513/ ...

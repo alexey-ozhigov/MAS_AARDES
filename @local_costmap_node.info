@@ -1,0 +1,65 @@
+--------------------------------------------------------------------------------
+Node [/local_costmap_node]
+Publications: 
+ * /local_costmap_node/costmap/robot_footprint [geometry_msgs/PolygonStamped]
+ * /rosout [rosgraph_msgs/Log]
+ * /local_costmap_node/costmap/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /local_costmap_node/costmap/unknown_space [nav_msgs/GridCells]
+ * /local_costmap_node/costmap/obstacles [nav_msgs/GridCells]
+ * /local_costmap_node/costmap/parameter_updates [dynamic_reconfigure/Config]
+ * /local_costmap_node/costmap/inflated_obstacles [nav_msgs/GridCells]
+
+Subscriptions: 
+ * /scan_rear [sensor_msgs/LaserScan]
+ * /tf [tf/tfMessage]
+ * /scan_top [sensor_msgs/LaserScan]
+ * /clock [rosgraph_msgs/Clock]
+ * /scan_front [sensor_msgs/LaserScan]
+
+Services: 
+ * /local_costmap_node/costmap/set_parameters
+ * /local_costmap_node/set_logger_level
+ * /local_costmap_node/get_loggers
+ * /local_costmap_node/tf_frames
+
+
+contacting node http://robocup-sim:43898/ ...
+Pid: 23126
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /local_costmap_node/costmap/obstacles
+    * to: /collision_velocity_filter
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:60489/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:42513/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /scan_front
+    * to: http://robocup-sim:49277/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /scan_rear
+    * to: http://robocup-sim:32827/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /scan_top
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+

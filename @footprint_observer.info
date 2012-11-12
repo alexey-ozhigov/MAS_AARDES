@@ -1,0 +1,41 @@
+--------------------------------------------------------------------------------
+Node [/footprint_observer]
+Publications: 
+ * /footprint_observer/adjusted_footprint [geometry_msgs/PolygonStamped]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /tf [tf/tfMessage]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /footprint_observer/get_loggers
+ * /footprint_observer/set_logger_level
+ * /footprint_observer/tf_frames
+ * /get_footprint
+
+
+contacting node http://robocup-sim:40757/ ...
+Pid: 23128
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:60489/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:42513/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+

@@ -1,0 +1,26 @@
+--------------------------------------------------------------------------------
+Node [/create_colored_point_cloud]
+Publications: 
+ * /cam3d/rgb/points [sensor_msgs/PointCloud2]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /create_colored_point_cloud/set_logger_level
+ * /create_colored_point_cloud/get_loggers
+
+
+contacting node http://robocup-sim:59008/ ...
+Pid: 22972
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+

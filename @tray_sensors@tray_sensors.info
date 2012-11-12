@@ -1,0 +1,47 @@
+--------------------------------------------------------------------------------
+Node [/tray_sensors/tray_sensors]
+Publications: 
+ * /tray_sensors/range_4 [sensor_msgs/Range]
+ * /tray_sensors/range_1 [sensor_msgs/Range]
+ * /tray_sensors/range_3 [sensor_msgs/Range]
+ * /tray_sensors/range_2 [sensor_msgs/Range]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /tray_sensors/range_3_sim [sensor_msgs/LaserScan]
+ * /tray_sensors/range_4_sim [sensor_msgs/LaserScan]
+ * /tray_sensors/range_2_sim [sensor_msgs/LaserScan]
+ * /clock [rosgraph_msgs/Clock]
+ * /tray_sensors/range_1_sim [sensor_msgs/LaserScan]
+
+Services: None
+
+
+contacting node http://robocup-sim:42036/ ...
+Pid: 23058
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tray_sensors/range_1_sim
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tray_sensors/range_3_sim
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tray_sensors/range_4_sim
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tray_sensors/range_2_sim
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+

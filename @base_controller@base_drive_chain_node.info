@@ -1,0 +1,96 @@
+--------------------------------------------------------------------------------
+Node [/base_controller/base_drive_chain_node]
+Publications: 
+ * /base_br_caster_r_wheel_controller/command [std_msgs/Float64]
+ * /base_bl_caster_r_wheel_controller/command [std_msgs/Float64]
+ * /base_bl_caster_rotation_controller/command [std_msgs/Float64]
+ * /base_fr_caster_r_wheel_controller/command [std_msgs/Float64]
+ * /base_controller/diagnostic [diagnostic_msgs/DiagnosticStatus]
+ * /base_br_caster_rotation_controller/command [std_msgs/Float64]
+ * /base_fr_caster_rotation_controller/command [std_msgs/Float64]
+ * /diagnostics [diagnostic_msgs/DiagnosticArray]
+ * /joint_states [sensor_msgs/JointState]
+ * /rosout [rosgraph_msgs/Log]
+ * /base_fl_caster_r_wheel_controller/command [std_msgs/Float64]
+ * /base_fl_caster_rotation_controller/command [std_msgs/Float64]
+ * /base_controller/state [pr2_controllers_msgs/JointTrajectoryControllerState]
+
+Subscriptions: 
+ * /joint_states [sensor_msgs/JointState]
+ * /clock [rosgraph_msgs/Clock]
+ * /base_controller/joint_command [pr2_controllers_msgs/JointTrajectoryControllerState]
+
+Services: 
+ * /base_controller/init
+ * /base_controller/shutdown
+ * /base_controller/base_drive_chain_node/get_loggers
+ * /base_controller/base_drive_chain_node/set_logger_level
+ * /base_controller/ElmoRecorderReadout
+ * /base_controller/recover
+ * /base_controller/ElmoRecorderConfig
+
+
+contacting node http://robocup-sim:50181/ ...
+Pid: 22997
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /base_bl_caster_r_wheel_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /base_br_caster_r_wheel_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /base_fl_caster_r_wheel_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /base_fr_caster_r_wheel_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /base_bl_caster_rotation_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /base_br_caster_rotation_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /base_fl_caster_rotation_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /base_fr_caster_rotation_controller/command
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: /base_controller/base_drive_chain_node
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /joint_states
+    * to: /robot_state_publisher
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: http://robocup-sim:50181/
+    * direction: inbound
+    * transport: INTRAPROCESS
+ * topic: /joint_states
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /base_controller/joint_command
+    * to: http://robocup-sim:42513/
+    * direction: inbound
+    * transport: TCPROS
+

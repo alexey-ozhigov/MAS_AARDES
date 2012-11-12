@@ -1,0 +1,32 @@
+--------------------------------------------------------------------------------
+Node [/sound_controller/sound_node]
+Publications: 
+ * /sound_controller/say/feedback [cob_sound/SayActionFeedback]
+ * /sound_controller/say/result [cob_sound/SayActionResult]
+ * /rosout [rosgraph_msgs/Log]
+ * /sound_controller/say/status [actionlib_msgs/GoalStatusArray]
+
+Subscriptions: 
+ * /say [unknown type]
+ * /sound_controller/say/cancel [unknown type]
+ * /clock [rosgraph_msgs/Clock]
+ * /sound_controller/say/goal [unknown type]
+
+Services: 
+ * /sound_controller/sound_node/set_logger_level
+ * /say
+ * /sound_controller/sound_node/get_loggers
+
+
+contacting node http://robocup-sim:56975/ ...
+Pid: 23113
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+

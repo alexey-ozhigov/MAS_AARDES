@@ -1,0 +1,31 @@
+--------------------------------------------------------------------------------
+Node [/base_controller/cob_base_velocity_smoother/cob_base_velocity_smoother]
+Publications: 
+ * /base_controller/command_direct [geometry_msgs/Twist]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /base_controller/command [geometry_msgs/Twist]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /base_controller/cob_base_velocity_smoother/cob_base_velocity_smoother/get_loggers
+ * /base_controller/cob_base_velocity_smoother/cob_base_velocity_smoother/set_logger_level
+
+
+contacting node http://robocup-sim:58143/ ...
+Pid: 23007
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:47618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /base_controller/command
+    * to: http://robocup-sim:59268/
+    * direction: inbound
+    * transport: TCPROS
+
