@@ -1,0 +1,31 @@
+Task 1.
+
+1) Question: What are the implications of these changes? Go through all components of the architecture and brainstorm about the possible consequences the scenario changes have on the baseline solution!
+
+   Answer:
+   The changes:
+      - The objects in AtWork lie on two predefined fixed heights
+      - The objects in AtHome lie on six predefined fixed heights
+      - The objects used in AtWork: nuts, bolts and other obj. of similar size
+      - The objects used in AtHome: ``Pringles'', bottles for drinks (glass and plastic, non-transparent), ketchup bottles
+   Implications of the changes:
+      - YouBot needs only pose for the gripper for grasping (no orientation)
+      - Jenny's hand should be positioned specifying pose and orientation (pregrasp position)
+      
+2) (the differences in the mechanical, electrical, and computational architecture)
+      - YouBot:
+         - Front laser scanner. Range: ... Span: ...
+         - Rear laser scanner. Range: ... Span: ...
+         - Microsoft Kinect. Range: ...
+      - Jenny:
+         - Front laser scanners: 2x SICK S300 (at the corners). Range: Span: ...
+         - Back laser scanner: Hokuyo URG-04LX.  Range: Span: ...
+         - Laser scanners cover 360 degree view at some distance. Only two small blind spots. But the coverage is non-coplanar, Hokuyo is higher than SICKs by ... Ncm
+         - Kinect. Range: ..., can rotate (observe the environment from front and rear) plus turn ... degrees
+         - Shunk SDH, up to ...kg, 3-finger hand with tactile sensors (pressure arrays)
+         - Kuka LWA ... 7DoF, up to 5kg 
+         - Torso joint(-s) Shunk PW 90/70 (tilt 90 degree max., pan ... degree max.)
+   Question: Do components have to be replaced?
+
+
+
