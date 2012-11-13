@@ -11,6 +11,7 @@ Task 1.
    Implications of the changes:
       - YouBot needs only pose for the gripper for grasping (no orientation)
       - Jenny's hand should be positioned specifying pose and orientation (pregrasp position)
+      - Objects being different, the perception algorithms used would be different. Hence use the appropriate perception stack.
       
 2) (the differences in the mechanical, electrical, and computational architecture)
       - YouBot:
