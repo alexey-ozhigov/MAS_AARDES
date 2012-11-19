@@ -1,0 +1,32 @@
+--------------------------------------------------------------------------------
+Node [/map_server]
+Publications: 
+ * /map_metadata [nav_msgs/MapMetaData]
+ * /rosout [rosgraph_msgs/Log]
+ * /map [nav_msgs/OccupancyGrid]
+
+Subscriptions: 
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /static_map
+ * /map_server/set_logger_level
+ * /map_server/get_loggers
+
+
+contacting node http://robocup-sim:50463/ ...
+Pid: 10079
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /map
+    * to: /move_base_adapted
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+

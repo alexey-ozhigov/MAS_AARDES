@@ -1,0 +1,28 @@
+--------------------------------------------------------------------------------
+Node [/script_server]
+Publications: 
+ * /script_server/result [raw_script_server/ScriptActionResult]
+ * /script_server/status [actionlib_msgs/GoalStatusArray]
+ * /rosout [rosgraph_msgs/Log]
+ * /script_server/feedback [raw_script_server/ScriptActionFeedback]
+
+Subscriptions: 
+ * /script_server/goal [unknown type]
+ * /script_server/cancel [unknown type]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: None
+
+
+contacting node http://robocup-sim:44604/ ...
+Pid: 10154
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+

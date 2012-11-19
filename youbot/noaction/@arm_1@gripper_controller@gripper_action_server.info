@@ -1,0 +1,39 @@
+--------------------------------------------------------------------------------
+Node [/arm_1/gripper_controller/gripper_action_server]
+Publications: 
+ * /arm_1/gripper_controller/MoveToJointConfigurationDirect/result [raw_arm_navigation/MoveToJointConfigurationActionResult]
+ * /arm_1/gripper_controller/MoveToJointConfigurationDirect/feedback [raw_arm_navigation/MoveToJointConfigurationActionFeedback]
+ * /arm_1/gripper_controller/position_command [brics_actuator/JointPositions]
+ * /rosout [rosgraph_msgs/Log]
+ * /arm_1/gripper_controller/MoveToJointConfigurationDirect/status [actionlib_msgs/GoalStatusArray]
+
+Subscriptions: 
+ * /arm_1/gripper_controller/MoveToJointConfigurationDirect/cancel [unknown type]
+ * /joint_states [sensor_msgs/JointState]
+ * /arm_1/gripper_controller/MoveToJointConfigurationDirect/goal [unknown type]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /arm_1/gripper_controller/is_gripper_closed
+
+
+contacting node http://robocup-sim:46601/ ...
+Pid: 10150
+Connections:
+ * topic: /arm_1/gripper_controller/position_command
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+

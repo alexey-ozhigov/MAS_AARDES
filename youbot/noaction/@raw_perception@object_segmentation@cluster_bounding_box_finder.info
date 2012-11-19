@@ -1,0 +1,80 @@
+--------------------------------------------------------------------------------
+Node [/raw_perception/object_segmentation/cluster_bounding_box_finder]
+Publications: 
+ * /tf [tf/tfMessage]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /tf [tf/tfMessage]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /raw_perception/object_segmentation/find_cluster_bounding_box
+ * /raw_perception/object_segmentation/find_cluster_bounding_box2
+ * /raw_perception/object_segmentation/cluster_bounding_box_finder/tf_frames
+
+
+contacting node http://robocup-sim:36816/ ...
+Pid: 10158
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /raw_perception/object_segmentation/cluster_bounding_box_finder
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /robot_pose_ekf
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /move_base_adapted
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /amcl
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /raw_perception/object_segmentation/object_segmentation
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /environment_server
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rviz_1353324140509749811
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: /rviz_1353324208791472665
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:57618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:51899/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:54507/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:36816/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+

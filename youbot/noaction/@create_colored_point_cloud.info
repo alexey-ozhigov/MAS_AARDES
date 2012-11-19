@@ -1,0 +1,40 @@
+--------------------------------------------------------------------------------
+Node [/create_colored_point_cloud]
+Publications: 
+ * /camera/rgb/points [sensor_msgs/PointCloud2]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /camera/rgb/image_raw [sensor_msgs/Image]
+ * /clock [rosgraph_msgs/Clock]
+ * /camera/depth/points [sensor_msgs/PointCloud2]
+
+Services: 
+ * /create_colored_point_cloud/set_logger_level
+ * /create_colored_point_cloud/get_loggers
+
+
+contacting node http://robocup-sim:36733/ ...
+Pid: 10068
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /camera/rgb/points
+    * to: /rviz_1353324208791472665
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /camera/rgb/image_raw
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /camera/depth/points
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+

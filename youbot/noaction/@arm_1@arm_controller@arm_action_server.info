@@ -1,0 +1,48 @@
+--------------------------------------------------------------------------------
+Node [/arm_1/arm_controller/arm_action_server]
+Publications: 
+ * /arm_1/arm_controller/MoveToCartesianRPYSampledDirect/status [actionlib_msgs/GoalStatusArray]
+ * /arm_1/arm_controller/MoveToCartesianPoseDirect/feedback [raw_arm_navigation/MoveToCartesianPoseActionFeedback]
+ * /arm_1/arm_controller/MoveToCartesianPoseDirect/status [actionlib_msgs/GoalStatusArray]
+ * /arm_1/arm_controller/MoveToJointConfigurationDirect/feedback [raw_arm_navigation/MoveToJointConfigurationActionFeedback]
+ * /arm_1/arm_controller/MoveToCartesianRPYSampledDirect/feedback [raw_arm_navigation/MoveToCartesianPoseActionFeedback]
+ * /arm_1/arm_controller/position_command [brics_actuator/JointPositions]
+ * /arm_1/arm_controller/MoveToJointConfigurationDirect/result [raw_arm_navigation/MoveToJointConfigurationActionResult]
+ * /arm_1/arm_controller/MoveToCartesianRPYSampledDirect/result [raw_arm_navigation/MoveToCartesianPoseActionResult]
+ * /rosout [rosgraph_msgs/Log]
+ * /arm_1/arm_controller/MoveToCartesianPoseDirect/result [raw_arm_navigation/MoveToCartesianPoseActionResult]
+ * /arm_1/arm_controller/MoveToJointConfigurationDirect/status [actionlib_msgs/GoalStatusArray]
+
+Subscriptions: 
+ * /arm_1/arm_controller/MoveToCartesianPoseDirect/cancel [unknown type]
+ * /arm_1/arm_controller/MoveToCartesianRPYSampledDirect/cancel [unknown type]
+ * /joint_states [sensor_msgs/JointState]
+ * /arm_1/arm_controller/MoveToJointConfigurationDirect/goal [unknown type]
+ * /arm_1/arm_controller/MoveToCartesianPoseDirect/goal [unknown type]
+ * /arm_1/arm_controller/MoveToCartesianRPYSampledDirect/goal [unknown type]
+ * /clock [rosgraph_msgs/Clock]
+ * /arm_1/arm_controller/MoveToJointConfigurationDirect/cancel [unknown type]
+
+Services: None
+
+
+contacting node http://robocup-sim:37118/ ...
+Pid: 10141
+Connections:
+ * topic: /arm_1/arm_controller/position_command
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+

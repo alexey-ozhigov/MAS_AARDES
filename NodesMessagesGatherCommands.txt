@@ -1,0 +1,7 @@
+rosnode list > youbot_sim_nodes_list.txt
+ls_messages ()  { grep --color=auto "\[" $1 | grep --color=auto -v ^Node | awk -F[ '{print $2}' | sed -e 's/]//g' -e 's/ //g' | grep --color=auto -v unknowntype | sort | uniq | grep -v ^/; }
+for i in $(cat youbot_sim_nodes_list.txt); do rosnode info $i > $(echo $i | sed -e 's/\//@/g').info ; done
+for i in *.info; do ls_messages $i >> youbot_sim_messages_under_no_actions.txt; done
+sort -n youbot_sim_messages_under_no_actions.txt| uniq  > youbot_sim_messages_under_no_actions.txt_sort
+mv youbot_sim_messages_under_no_actions.txt_sort youbot_sim_messages_under_no_actions.txt
+for i in $(cat youbot_sim_messages_under_no_actions.txt); do rosmsg sh

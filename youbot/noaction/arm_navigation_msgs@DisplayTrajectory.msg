@@ -1,0 +1,56 @@
+string model_id
+arm_navigation_msgs/RobotTrajectory trajectory
+  trajectory_msgs/JointTrajectory joint_trajectory
+    Header header
+      uint32 seq
+      time stamp
+      string frame_id
+    string[] joint_names
+    trajectory_msgs/JointTrajectoryPoint[] points
+      float64[] positions
+      float64[] velocities
+      float64[] accelerations
+      duration time_from_start
+  arm_navigation_msgs/MultiDOFJointTrajectory multi_dof_joint_trajectory
+    duration stamp
+    string[] joint_names
+    string[] frame_ids
+    string[] child_frame_ids
+    arm_navigation_msgs/MultiDOFJointTrajectoryPoint[] points
+      geometry_msgs/Pose[] poses
+        geometry_msgs/Point position
+          float64 x
+          float64 y
+          float64 z
+        geometry_msgs/Quaternion orientation
+          float64 x
+          float64 y
+          float64 z
+          float64 w
+      duration time_from_start
+arm_navigation_msgs/RobotState robot_state
+  sensor_msgs/JointState joint_state
+    Header header
+      uint32 seq
+      time stamp
+      string frame_id
+    string[] name
+    float64[] position
+    float64[] velocity
+    float64[] effort
+  arm_navigation_msgs/MultiDOFJointState multi_dof_joint_state
+    time stamp
+    string[] joint_names
+    string[] frame_ids
+    string[] child_frame_ids
+    geometry_msgs/Pose[] poses
+      geometry_msgs/Point position
+        float64 x
+        float64 y
+        float64 z
+      geometry_msgs/Quaternion orientation
+        float64 x
+        float64 y
+        float64 z
+        float64 w
+

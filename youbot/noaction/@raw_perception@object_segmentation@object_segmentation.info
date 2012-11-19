@@ -1,0 +1,53 @@
+--------------------------------------------------------------------------------
+Node [/raw_perception/object_segmentation/object_segmentation]
+Publications: 
+ * /raw_perception/object_segmentation/object_segmentation/parameter_updates [dynamic_reconfigure/Config]
+ * /raw_perception/object_segmentation/object_points [sensor_msgs/PointCloud2]
+ * /rosout [rosgraph_msgs/Log]
+ * /raw_perception/object_segmentation/object_segmentation/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /raw_perception/object_segmentation/plane_points [sensor_msgs/PointCloud2]
+
+Subscriptions: 
+ * /tf [tf/tfMessage]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /raw_perception/object_segmentation/object_segmentation/set_parameters
+ * /raw_perception/object_segmentation/get_scene_objects
+ * /raw_perception/object_segmentation/object_segmentation/set_logger_level
+ * /raw_perception/object_segmentation/object_segmentation/get_loggers
+ * /raw_perception/object_segmentation/object_segmentation/tf_frames
+
+
+contacting node http://robocup-sim:42689/ ...
+Pid: 10167
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:54507/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:51899/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:57618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:36816/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+

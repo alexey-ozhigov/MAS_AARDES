@@ -1,0 +1,31 @@
+--------------------------------------------------------------------------------
+Node [/lowpass_filter]
+Publications: 
+ * /cmd_vel [geometry_msgs/Twist]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /move_base/cmd_vel [unknown type]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /lowpass_filter/get_loggers
+ * /lowpass_filter/set_logger_level
+
+
+contacting node http://robocup-sim:55985/ ...
+Pid: 10111
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /cmd_vel
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+

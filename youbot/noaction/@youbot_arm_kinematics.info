@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------
+Node [/youbot_arm_kinematics]
+Publications: 
+ * /youbot_arm_kinematics/sync_planning_scene/status [actionlib_msgs/GoalStatusArray]
+ * /youbot_arm_kinematics/sync_planning_scene/feedback [arm_navigation_msgs/SyncPlanningSceneActionFeedback]
+ * /rosout [rosgraph_msgs/Log]
+ * /ik_solution_display [arm_navigation_msgs/DisplayTrajectory]
+ * /youbot_arm_kinematics/sync_planning_scene/result [arm_navigation_msgs/SyncPlanningSceneActionResult]
+
+Subscriptions: 
+ * /youbot_arm_kinematics/sync_planning_scene/goal [arm_navigation_msgs/SyncPlanningSceneActionGoal]
+ * /clock [rosgraph_msgs/Clock]
+ * /youbot_arm_kinematics/sync_planning_scene/cancel [actionlib_msgs/GoalID]
+
+Services: 
+ * /youbot_arm_kinematics/get_fk
+ * /youbot_arm_kinematics/get_constraint_aware_ik
+ * /youbot_arm_kinematics/set_logger_level
+ * /youbot_arm_kinematics/get_ik_solver_info
+ * /youbot_arm_kinematics/get_fk_solver_info
+ * /youbot_arm_kinematics/get_ik
+ * /youbot_arm_kinematics/get_loggers
+
+
+contacting node http://robocup-sim:58771/ ...
+Pid: 10140
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /youbot_arm_kinematics/sync_planning_scene/result
+    * to: /environment_server
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /youbot_arm_kinematics/sync_planning_scene/feedback
+    * to: /environment_server
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /youbot_arm_kinematics/sync_planning_scene/status
+    * to: /environment_server
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /youbot_arm_kinematics/sync_planning_scene/goal
+    * to: http://robocup-sim:50392/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /youbot_arm_kinematics/sync_planning_scene/cancel
+    * to: http://robocup-sim:50392/
+    * direction: inbound
+    * transport: TCPROS
+

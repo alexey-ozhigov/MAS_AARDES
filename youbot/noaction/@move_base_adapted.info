@@ -1,0 +1,107 @@
+--------------------------------------------------------------------------------
+Node [/move_base_adapted]
+Publications: 
+ * /move_base/feedback [move_base_msgs/MoveBaseActionFeedback]
+ * /move_base/status [actionlib_msgs/GoalStatusArray]
+ * /move_base_adapted/global_costmap/unknown_space [nav_msgs/GridCells]
+ * /move_base_adapted/global_costmap/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /move_base_adapted/TrajectoryPlannerROS/parameter_updates [dynamic_reconfigure/Config]
+ * /move_base_adapted/global_costmap/parameter_updates [dynamic_reconfigure/Config]
+ * /move_base_adapted/TrajectoryPlannerROS/cost_cloud [sensor_msgs/PointCloud2]
+ * /move_base_adapted/NavfnROS/NavfnROS_costmap/robot_footprint [geometry_msgs/PolygonStamped]
+ * /move_base_adapted/global_costmap/inflated_obstacles [nav_msgs/GridCells]
+ * /move_base_adapted/local_costmap/unknown_space [nav_msgs/GridCells]
+ * /move_base_adapted/local_costmap/parameter_updates [dynamic_reconfigure/Config]
+ * /move_base_adapted/local_costmap/inflated_obstacles [nav_msgs/GridCells]
+ * /move_base/goal [move_base_msgs/MoveBaseActionGoal]
+ * /move_base_adapted/global_costmap/robot_footprint [geometry_msgs/PolygonStamped]
+ * /move_base_adapted/local_costmap/obstacles [nav_msgs/GridCells]
+ * /move_base_adapted/NavfnROS/plan [nav_msgs/Path]
+ * /move_base_adapted/current_goal [geometry_msgs/PoseStamped]
+ * /cmd_vel [geometry_msgs/Twist]
+ * /rosout [rosgraph_msgs/Log]
+ * /move_base_adapted/local_costmap/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /move_base_adapted/NavfnROS/NavfnROS_costmap/unknown_space [nav_msgs/GridCells]
+ * /move_base_adapted/NavfnROS/NavfnROS_costmap/inflated_obstacles [nav_msgs/GridCells]
+ * /move_base_adapted/NavfnROS/NavfnROS_costmap/obstacles [nav_msgs/GridCells]
+ * /move_base_adapted/TrajectoryPlannerROS/local_plan [nav_msgs/Path]
+ * /move_base/result [move_base_msgs/MoveBaseActionResult]
+ * /move_base_adapted/local_costmap/robot_footprint [geometry_msgs/PolygonStamped]
+ * /move_base_adapted/TrajectoryPlannerROS/parameter_descriptions [dynamic_reconfigure/ConfigDescription]
+ * /move_base_adapted/global_costmap/obstacles [nav_msgs/GridCells]
+ * /move_base_adapted/TrajectoryPlannerROS/global_plan [nav_msgs/Path]
+
+Subscriptions: 
+ * /tf [tf/tfMessage]
+ * /odom [nav_msgs/Odometry]
+ * /move_base_simple/goal [unknown type]
+ * /map [nav_msgs/OccupancyGrid]
+ * /move_base/goal [move_base_msgs/MoveBaseActionGoal]
+ * /clock [rosgraph_msgs/Clock]
+ * /move_base/cancel [unknown type]
+
+Services: 
+ * /move_base_adapted/get_loggers
+ * /move_base_adapted/clear_unknown_space
+ * /move_base_adapted/tf_frames
+ * /move_base_adapted/clear_costmaps
+ * /move_base_adapted/make_plan
+ * /move_base_adapted/global_costmap/set_parameters
+ * /move_base_adapted/local_costmap/set_parameters
+ * /move_base_adapted/set_logger_level
+ * /move_base_adapted/NavfnROS/make_plan
+ * /move_base_adapted/TrajectoryPlannerROS/set_parameters
+
+
+contacting node http://robocup-sim:53582/ ...
+Pid: 10124
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /cmd_vel
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /move_base/goal
+    * to: /move_base_adapted
+    * direction: outbound
+    * transport: INTRAPROCESS
+ * topic: /clock
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:54507/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:51899/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:57618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:36816/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /map
+    * to: http://robocup-sim:50463/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /odom
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /move_base/goal
+    * to: http://robocup-sim:53582/
+    * direction: inbound
+    * transport: INTRAPROCESS
+

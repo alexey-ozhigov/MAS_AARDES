@@ -1,0 +1,26 @@
+--------------------------------------------------------------------------------
+Node [/raw_base_placement/raw_base_placement_wrt_workspace_ss]
+Publications: 
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /raw_base_placement/raw_base_placement_wrt_workspace_ss/get_loggers
+ * /raw_base_placement/scan_front_linearregression
+ * /raw_base_placement/raw_base_placement_wrt_workspace_ss/set_logger_level
+
+
+contacting node http://robocup-sim:42924/ ...
+Pid: 10127
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+

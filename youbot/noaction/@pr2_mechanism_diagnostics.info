@@ -1,0 +1,31 @@
+--------------------------------------------------------------------------------
+Node [/pr2_mechanism_diagnostics]
+Publications: 
+ * /diagnostics [diagnostic_msgs/DiagnosticArray]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /mechanism_statistics [pr2_mechanism_msgs/MechanismStatistics]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /pr2_mechanism_diagnostics/get_loggers
+ * /pr2_mechanism_diagnostics/set_logger_level
+
+
+contacting node http://robocup-sim:35830/ ...
+Pid: 10056
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /mechanism_statistics
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+

@@ -1,0 +1,35 @@
+--------------------------------------------------------------------------------
+Node [/raw_base_placement/raw_base_placement_wrt_workspace_as]
+Publications: 
+ * /raw_base_placement/adjust_to_workspace/feedback [raw_base_placement/OrientToBaseActionFeedback]
+ * /raw_base_placement/adjust_to_workspace/result [raw_base_placement/OrientToBaseActionResult]
+ * /cmd_vel [geometry_msgs/Twist]
+ * /rosout [rosgraph_msgs/Log]
+ * /raw_base_placement/adjust_to_workspace/status [actionlib_msgs/GoalStatusArray]
+
+Subscriptions: 
+ * /raw_base_placement/adjust_to_workspace/cancel [unknown type]
+ * /raw_base_placement/adjust_to_workspace/goal [unknown type]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /raw_base_placement/raw_base_placement_wrt_workspace_as/set_logger_level
+ * /raw_base_placement/raw_base_placement_wrt_workspace_as/get_loggers
+
+
+contacting node http://robocup-sim:38641/ ...
+Pid: 10131
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /cmd_vel
+    * to: /gazebo
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+

@@ -1,0 +1,105 @@
+--------------------------------------------------------------------------------
+Node [/rosout]
+Publications: 
+ * /rosout_agg [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /rosout [rosgraph_msgs/Log]
+
+Services: 
+ * /rosout/set_logger_level
+ * /rosout/get_loggers
+
+
+contacting node http://robocup-sim:39624/ ...
+Pid: 10038
+Connections:
+ * topic: /rosout
+    * to: http://robocup-sim:35830/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:50463/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:57618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:54507/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:36733/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:55985/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:51899/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:58710/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:52556/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:53582/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:55978/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:58771/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:42689/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:38641/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:42924/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:37118/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:36816/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:46601/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:44604/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:50392/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /rosout
+    * to: http://robocup-sim:39183/
+    * direction: inbound
+    * transport: TCPROS
+

@@ -1,0 +1,83 @@
+--------------------------------------------------------------------------------
+Node [/environment_server]
+Publications: 
+ * /youbot_arm_kinematics/sync_planning_scene/goal [arm_navigation_msgs/SyncPlanningSceneActionGoal]
+ * /youbot_arm_kinematics/sync_planning_scene/cancel [actionlib_msgs/GoalID]
+ * /rosout [rosgraph_msgs/Log]
+
+Subscriptions: 
+ * /tf [tf/tfMessage]
+ * /collision_object [unknown type]
+ * /youbot_arm_kinematics/sync_planning_scene/status [actionlib_msgs/GoalStatusArray]
+ * /attached_collision_object [unknown type]
+ * /youbot_arm_kinematics/sync_planning_scene/feedback [arm_navigation_msgs/SyncPlanningSceneActionFeedback]
+ * /joint_states [sensor_msgs/JointState]
+ * /youbot_arm_kinematics/sync_planning_scene/result [arm_navigation_msgs/SyncPlanningSceneActionResult]
+ * /clock [rosgraph_msgs/Clock]
+
+Services: 
+ * /environment_server/get_planning_scene
+ * /environment_server/tf_frames
+ * /environment_server/set_logger_level
+ * /environment_server/set_planning_scene_diff
+ * /environment_server/get_loggers
+ * /register_planning_scene
+ * /environment_server/get_robot_state
+
+
+contacting node http://robocup-sim:50392/ ...
+Pid: 10135
+Connections:
+ * topic: /rosout
+    * to: /rosout
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /youbot_arm_kinematics/sync_planning_scene/goal
+    * to: /youbot_arm_kinematics
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /youbot_arm_kinematics/sync_planning_scene/cancel
+    * to: /youbot_arm_kinematics
+    * direction: outbound
+    * transport: TCPROS
+ * topic: /clock
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:54507/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:51899/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:57618/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:36816/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /tf
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /joint_states
+    * to: http://robocup-sim:37419/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /youbot_arm_kinematics/sync_planning_scene/status
+    * to: http://robocup-sim:58771/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /youbot_arm_kinematics/sync_planning_scene/feedback
+    * to: http://robocup-sim:58771/
+    * direction: inbound
+    * transport: TCPROS
+ * topic: /youbot_arm_kinematics/sync_planning_scene/result
+    * to: http://robocup-sim:58771/
+    * direction: inbound
+    * transport: TCPROS
+
