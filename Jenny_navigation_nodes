@@ -1,0 +1,15 @@
+map_server in ros package map_server
+amcl in ros package amcl
+robot_state_publisher in ros package robot_model
+move_base in ros package move_base    (analogous to move_base_adapted in RAW; Might need to be modified)
+robot_pose_ekf in ros package robot_pose_ekf
+brsu_navigation_goals_as_marker   in package brsu_tools
+script_server in package cob_script_server 
+
+
+
+No analogous nodes could be found for:
+--------------------------------------
+/raw_base_placement/raw_base_placement_wrt_workspace_as
+/raw_base_placement/raw_base_placement_wrt_workspace_ss
+/raw_relative_movements/raw_relative_movements
