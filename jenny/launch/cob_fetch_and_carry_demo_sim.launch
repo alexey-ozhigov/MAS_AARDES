@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+	<!-- base components -->
+	<include file="$(find cob_bringup_sim)/launch/robot.launch" />
+
+        <!-- spawn objects -->
+        <include file="$(find cob_gazebo_objects)/launch/upload_param.launch" />
+
+        <!-- navigation -->
+        <include file="$(find cob_navigation_global)/launch/2dnav_ros_dwa.launch" />
+        <!-- include file="$(find cob_relative_movements)/launch/base_controller.launch" /-->
+
+        <!-- this functionality is not needed in Jenny. Should this node be launched at all? Or, should a dummy node be created? Pending decision -->
+        <!-- include file="$(find cob_base_placement)/ros/launch/placement_wrt_workspace.launch" /-->
+
+        <!-- load objects into gazebo -->
+        <node pkg="cob_bringup_sim" type="spawn_object.py" name="spawn_sim_objects" respawn="false" output="screen" args="salt tomato_sauce" />   
+        
+
+
+</launch>
