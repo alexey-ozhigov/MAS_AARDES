@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+        
+  <node pkg="cob_relative_movements" type="base_controller" name="cob_relative_movements" ns="cob_relative_movements" output="screen"/>
+
+
+</launch>
