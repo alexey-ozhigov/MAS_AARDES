@@ -1,0 +1,14 @@
+<package>
+  <description brief="jenny_fetch_and_carry">
+
+     jenny_fetch_and_carry
+
+  </description>
+  <author>alex</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/jenny_fetch_and_carry</url>
+
+</package>
+
+
