@@ -1,0 +1,41 @@
+MAS AARDES team meeting 
+
+date 12-17-2012, 4:00 to 5:45 pm
+
+participants:
+Beate (skype)
+Teena (skype)
+Alexey (skype + room C025)
+Jeyaprakash
+Niranjan
+Ahmad
+
+Topic 1: file cob_fetch_and_carry_demo_sim.launch 
+The group discussed the launch file and came up with the following results:
+- Verification of this launch file concerning navigation. 
+- Manipulation and perception have to be added until next lecture/meeting.
+- Teena, Alexey and Beate could launch the file sucessfully. 
+-- The kitchen environment was simulated and the robot could be navigated via 
+   teleop/keyboard.
+-> action item: we agreed to create a new package where the new launch files will be 
+   located.
+
+Topic 2: generic state machine (brainstorming)
+The group discussed the following three options:
+- option 1: creating dummy nodes if needed.
+- option 2: using inheritance, if possible.
+-- todo: figuring out if some kind of inheritance is available in state machines
+- option 3: creating one generic state machine. All robot specific states will 
+            be defined in "sub"state machines.
+-> action item: no action items agreed.
+			
+Topic 3: generic script server and other components
+- due to time constraints this topic was not discussed
+            
+Conclusion: Open items will be discussed next wednesday after lecture.
+ 
+
+
+
+
+
