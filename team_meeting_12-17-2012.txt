@@ -1,3 +1,5 @@
+Last edition: Added manipulation launch files
+______________________________________________
 MAS AARDES team meeting 
 
 date 12-17-2012, 4:00 to 5:45 pm
@@ -12,9 +14,14 @@ Ahmad
 
 Topic 1: file cob_fetch_and_carry_demo_sim.launch 
 The group discussed the launch file and came up with the following results:
-- Verification of this launch file concerning navigation. 
-- Manipulation and perception have to be added until next lecture/meeting.
-- Teena, Alexey and Beate could launch the file sucessfully. 
+- Verification of this launch file concerning navigation.
+- Manipulation: 
+   1) planning environment for Jenny: planning_environment.launch in brsu_arm_navigation
+   2) environment server for Jenny: environment_server.launch in brsu_arm_navigation
+   3) kinematics for Jenny: constraint_aware_kinematics.launch in brsu_arm_navigation
+   4) scripts for Jenny: move_arm_joint_goal.py, move_arm_pose_goal.py ???
+- Perception have to be added until next lecture/meeting.
+- Teena, Alexey and Beate could launch the file successfully. 
 -- The kitchen environment was simulated and the robot could be navigated via 
    teleop/keyboard.
 -> action item: we agreed to create a new package where the new launch files will be 
@@ -32,7 +39,7 @@ The group discussed the following three options:
 Topic 3: generic script server and other components
 - due to time constraints this topic was not discussed
             
-Conclusion: Open items will be discussed next wednesday after lecture.
+Conclusion: Open items will be discussed next Wednesday after lecture.
  
 
 
